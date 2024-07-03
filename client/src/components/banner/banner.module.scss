@@ -2,10 +2,37 @@
   display: flex;
   width: 100%;
   height: 823px;
-  background: firebrick;
+  align-items: center;
+  justify-content: space-between  ;
   &_firstCont{
-    height: 500px;
-    width: 100px;
-    background: rgb(203, 203, 71);
+    height: 436px;
+    width: 580px;
+    &_title{
+      font-family: "Exo 2", sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      color: #779611;
+    }
+    &_text{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    &_button{
+      background: #779611;
+      color: white;
+      border: none;
+      width: 224px;
+      height: 75px;
+      border-radius: 40px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 32px;
+      cursor: pointer;
+    }
+  }
+  &_secondCont{
+    width:660px;
+    height:823px;
   }
 } 
