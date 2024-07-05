@@ -9,4 +9,4 @@ const ProductItem=(props)=>{
     </article>
   )
 }
-export default ProductItem
+export default ProductItem  
