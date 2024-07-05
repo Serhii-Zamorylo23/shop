@@ -1,0 +1,21 @@
+.BannerBottom{
+  width: 100%;
+  border-bottom:2px solid #779611;
+  &_wrapper{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    &_firstContent{
+      width: 560px;
+      height: 373px;
+      &_about{
+        font-family: "Exo 2", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color:#779611;
+      }
+    }
+  }
+}

@@ -3,33 +3,62 @@ import ProductItem from "./productsItem"
 const Products=()=>{
   const storageItem1=[
     {
-      text:"green Punch",
-      price:"$6.00"
+      id:1,
+      name:"green Punch",
+      price:6
     },
     {
-      text:"Apple Citrus",
-      price:"$6.00"
+      id:2,
+      name:"Apple Citrus",
+      price:6
     },
     {
-      text:"Orange Zest",
-      price:"$6.00"
+      id:3,
+      name:"Orange Zest",
+      price:6
     }
   ]
+  const storageItem2=[
+    {
+      id:4,
+      name:"Total Care",
+      price:50
+    },
+    {
+      id:5,
+      name:"Detox Plan",
+      price:30
+    },
+    {
+      id:6,
+      name:"Full-Day Cleanses",
+      price:30
+    }
+    
+  ]
   return(
-    <div className={s.product}>
-      <div className={s.product_wrapper}>
-        <h1 className={s.product_wrapper_title}>Shop flaves</h1>
-        <p className={s.product_wrapper_text}>Cold-pressed, 100% organic, packed with vitamins, nutrients, and natural goodness.</p>
-        <div className={s.product_wrapper_item}>
-          {storageItem1.map((item)=>(
-            <ProductItem
-            text={item.text}
-            price={item.price}
-            />
-          ))}
-        </div>
+    <section className={s.section}>
+      <div className={s.wrapper}>
+      <h1 className={s.section_name}>Shop flaves</h1>
+      <p className={s.section_text}>Cold-pressed, 100% organic, packed with vitamins, nutrients, and natural goodness.</p>
+      <ul className={s.list}>
+        {storageItem1.map((item)=>{
+          return(
+            <ProductItem key={item.id} name={item.name} price={item.price}/>
+          )
+        })}
+      </ul>
+      <h1 className={s.section_name}>Subscription</h1>
+      <p className={s.section_text}>Subscribe to any of our plans and select how often you want them delivered.</p>
+      <ul className={s.list}>
+        {storageItem2.map((item)=>{
+          return(
+            <ProductItem key={item.id} name={item.name} price={item.price}/>
+          )
+        })}
+      </ul>
       </div>
-    </div>
+    </section>
   )
 }
 export default Products
