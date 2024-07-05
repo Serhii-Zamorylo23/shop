@@ -1,0 +1,30 @@
+.product{
+  &_wrapper{
+    display: flex ;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    column-gap: 120px;
+    height: auto;
+    &_title{
+      font-family: "Exo 2", sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      color: #779611;
+    }
+    &_text{
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      width: 612px;
+    }
+    &_item{
+      display: flex;
+      width: 100%;
+      &_img{
+        width: 560px;
+        height: 700px;
+      }
+    }
+  }
+}

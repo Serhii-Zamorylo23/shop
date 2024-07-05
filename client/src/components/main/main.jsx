@@ -1,12 +1,11 @@
-import s from "./main.module.scss"
 import Banner from "../banner/banner"
+import Products from "../products/products"
 const Main =()=>{
   
   return(
     <main>
-      <div className={s.wrapper}>
       <Banner/>
-      </div>
+      <Products/> 
     </main>
   )
 }
