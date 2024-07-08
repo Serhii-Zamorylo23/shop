@@ -16,6 +16,23 @@
         font-size: 24px;
         color:#779611;
       }
+      &_title{
+        font-family: "Exo 2", sans-serif;
+        font-weight: 600;
+        font-size: 48px;
+        color: #779611;
+      }
+      &_text{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 20px;    
+      }
+    }
+    &_secondContent{
+      &_photo{
+        margin-top: 114px;
+        margin-bottom: 114px;
+      }
     }
   }
 }
