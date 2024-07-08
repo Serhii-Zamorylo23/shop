@@ -1,6 +1,6 @@
-import s from "./cardfooter.module.scss"
+import s from "./AboutUs.module.scss"
 
-const Cardfooter=()=>{
+const AboutUs=()=>{
   const footerStorage=[
     "Terms & Conditions",
     "Privacy Policy",
@@ -24,4 +24,4 @@ const Cardfooter=()=>{
   </section>
   )
 }
-export default Cardfooter
+export default AboutUs
